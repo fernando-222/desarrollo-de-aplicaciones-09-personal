@@ -1,0 +1,28 @@
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.columna {
+    width: 100%;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .columna {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .columna {
+        width: 33.33%;
+    }
+}

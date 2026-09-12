@@ -1,0 +1,44 @@
+@import "variables";
+@import "funciones";
+@import "mixins";
+@import "grilla";
+@import "botones";
+
+body {
+    font-family: $fuente-base;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.titulo {
+    font-size: px-a-rem(32px);
+    margin-bottom: px-a-rem(20px);
+}
+
+.tarjeta {
+    padding: px-a-rem(20px);
+    margin-bottom: px-a-rem(20px);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.primario {
+    @include tema-componente($color-primario);
+}
+
+.secundario {
+    @include tema-componente($color-secundario);
+}
+
+.acento {
+    @include tema-componente($color-acento);
+}
+
+.peligro {
+    @include tema-componente($color-peligro);
+}
+
+.advertencia {
+    @include tema-componente($color-advertencia);
+}

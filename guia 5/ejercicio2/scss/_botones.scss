@@ -1,0 +1,22 @@
+$tema-colores: (
+    "primario": $color-primario,
+    "secundario": $color-secundario,
+    "acento": $color-acento,
+    "peligro": $color-peligro,
+    "advertencia": $color-advertencia
+);
+
+@each $nombre, $color in $tema-colores {
+
+    .btn-#{$nombre} {
+        background-color: $color;
+        color: white;
+        padding: px-a-rem(10px) px-a-rem(20px);
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: darken($color, 10%);
+        }
+    }
+}
